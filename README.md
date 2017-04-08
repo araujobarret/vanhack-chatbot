@@ -1,6 +1,6 @@
 # vanhack-chatbot
 
-Banco de dados
+Database
 ```
 CREATE TABLE ignored_words(
   id INT(11) NOT NULL AUTO INCREMENT PRIMARY KEY,
