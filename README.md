@@ -1,16 +1,13 @@
-# vanhack-chatbot
+# ChatRobot
 
-Database
-```
-CREATE TABLE ignored_words(
-  id INT(11) NOT NULL AUTO INCREMENT PRIMARY KEY,
-  word VARCHAR(40) NOT NULL
-);
+## Install Instructions
 
-CREATE TABLE questions_answers(
-    id INT(11) NOT NULL AUTO INCREMENT PRIMARY KEY,
-    question VARCHAR(255) NOT NULL,
-    answer VARCHAR(255) NOT NULL
-);
+- Copy this project to your website directory.
+- Create the database chatrobot on your MySQL.
+- Import the app.sql to the chatrobot database.
+- Configure the user and password for accessing the database on the fil database.php
 
-```
+## Use Instructions
+
+This robot is implemented with supervised learning, so inserting overfitting data may cause
+malfunction and errors to the expected answers.
