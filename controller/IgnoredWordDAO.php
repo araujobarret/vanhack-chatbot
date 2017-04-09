@@ -3,7 +3,6 @@
 namespace chatrobot\controller;
 
 use chatrobot\Database;
-use chatrobot\model\IgnoredWord;
 
 class IgnoredWordDAO
 {
@@ -24,7 +23,6 @@ class IgnoredWordDAO
         $sql = "SELECT * FROM " . self::TABLE;
         $result = $this->pdo->query($sql);
         $data = $result->fetchAll(\PDO::FETCH_ASSOC);
-        $ignoredWord = new IgnoredWord();
 
         $list = array();
 
@@ -32,8 +30,7 @@ class IgnoredWordDAO
         {
             foreach($data as $row)
             {
-                $ignoredWord->setId($row['id']);
-                $ignoredWord->setWord($row['word']);
+                $ignoredWord = strtolower($row['word']);
                 $list[] = $ignoredWord;
             }
         }

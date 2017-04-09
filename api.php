@@ -10,5 +10,5 @@ $questionsAnswers = new chatrobot\controller\QuestionAnswerDAO();
 $ignoredWords = new chatrobot\controller\IgnoredWordDAO();
 if(isset($_GET['action']))
 {
-    $questionsAnswers->getList();
+    echo $questionsAnswers->question(urlencode(strtolower($_GET['action'])) );
 }
