@@ -31,7 +31,8 @@ class QuestionAnswerDAO
     private function normalizePunctuationWord($word)
     {
         // Remove the punctuation
-        $word = str_replace(array("?", "!", ".", "...", ",", "(", ")"), "", $word);
+        $word = str_replace(array("?", "!", ".", "...", ","), "", $word);
+        $word = str_replace(array("(", ")"), " ", $word);
         return $word;
     }
 
@@ -43,11 +44,16 @@ class QuestionAnswerDAO
 
         // now lets compare each word to see if be in the ignored list of words
         for($i = 0; $i < count($this->ignoredWords); $i++)
-            for($j = 0; $j < count($wordExploded); $j++)
+            for($j = count($wordExploded)-1; $j >= 0; $j--)
+            {
                 // If matches we need to remove the ignored word from the question
                 if($this->ignoredWords[$i] == $wordExploded[$j])
                     array_splice($wordExploded, $j, 1);
-
+                // If the element exploded is a null value remove it
+                else
+                    if($wordExploded[$j] == null)
+                    array_splice($wordExploded, $j, 1);
+            }
         return $wordExploded;
     }
 
@@ -167,22 +173,17 @@ class QuestionAnswerDAO
                 {
                     if($questionNormalized[$j] == $this->words[$i]['words'][$k])
                         $sumWeightsQuestion += $this->words[$i]['weight'][$k];
-
-                    echo "Comparsion k: $k - $questionNormalized[$j] == " . $this->words[$i]['words'][$k] .
-                        " SumWeight at moment: " . $sumWeightsQuestion . "<br>";
                 }
             }
             // Calculate the wheighted average
             $sumWeightsQuestion = $sumWeightsQuestion / $this->words[$i]['sumWeights'];
-            echo "<br><b>$sumWeightsQuestion</b><br>";
-
             // Update the data of the best fitting answer
             if($sumWeightsQuestion > $relevantQuestionWeight && $sumWeightsQuestion > 0.5)
             {
                 $relevantQuestionKey = $i;
                 $relevantQuestionWeight = $sumWeightsQuestion;
             }
-            echo "Relevant at moment: $relevantQuestionKey - $i - Total Weight: " .  $this->words[$i]['sumWeights'] .  " - Sum Weights of the question: $sumWeightsQuestion <br>";
+
         }
 
         // Here we can put a threshold to filter the relevant data

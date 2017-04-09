@@ -22,19 +22,22 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="default.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/default.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-              <folding />
+            <state relative-caret-position="346">
+              <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+              <folding>
+                <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1491760959746" expanded="true" signature="875:1361" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="939:1153" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="991:1024" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="991:1126" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1203:1334" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1614:2038" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1660:1770" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1829:2015" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1880:1909" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1880:1992" ph="..." />
+                <marker date="1491760959746" expanded="true" signature="1909:1928" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -42,8 +45,8 @@
       <file leaf-file-name="api.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/api.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
+            <state relative-caret-position="272">
+              <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -73,10 +76,10 @@
         <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/model/QuestionAnswer.php" />
         <option value="$PROJECT_DIR$/controller/IgnoredWordDAO.php" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/default.css" />
         <option value="$PROJECT_DIR$/api.php" />
         <option value="$PROJECT_DIR$/controller/QuestionAnswerDAO.php" />
-        <option value="$PROJECT_DIR$/default.css" />
-        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -119,6 +122,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="vanhack-chatbot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vanhack-chatbot" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vanhack-chatbot" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,7 +219,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1491705657852</updated>
-      <workItem from="1491705897012" duration="25826000" />
+      <workItem from="1491705897012" duration="36220000" />
     </task>
     <task id="LOCAL-00001" summary="Models and DAO of IgnoredWords implemented. Still implementing the DAO of the QuenstionAnswer class.">
       <created>1491735591057</created>
@@ -215,11 +232,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25826000" />
+    <option name="totallyTimeSpent" value="36220000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963397" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -330,49 +347,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/default.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-765">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/QuestionAnswerDAO.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1819">
-          <caret line="200" column="1" lean-forward="true" selection-start-line="200" selection-start-column="1" selection-end-line="200" selection-end-column="1" />
+        <state relative-caret-position="272">
+          <caret line="53" column="20" lean-forward="false" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
           <folding>
             <element signature="e#40#63#0#PHP" expanded="true" />
             <element signature="e#419#739#0#PHP" expanded="false" />
-            <element signature="e#785#985#0#PHP" expanded="false" />
-            <element signature="e#1051#1627#0#PHP" expanded="false" />
-            <element signature="e#1843#4215#0#PHP" expanded="false" />
-            <element signature="e#2153#2546#0#PHP" expanded="false" />
-            <element signature="e#2675#4208#0#PHP" expanded="false" />
-            <element signature="e#4373#5015#0#PHP" expanded="false" />
-            <marker date="1491752189230" expanded="true" signature="4464:4489" ph="SELECT * FRO... ${self::TABLE}" />
-            <marker date="1491752189230" expanded="true" signature="5241:5264" ph="SELECT id, q... ${self::TABLE}" />
-            <marker date="1491752189230" expanded="true" signature="5241:5293" ph="SELECT id, a... ${self::TABLE}" />
-            <marker date="1491752189230" expanded="true" signature="5241:5294" ph="SELECT id, q... ${self::TABLE}" />
-            <marker date="1491752189230" expanded="true" signature="5241:5298" ph="SELECT id, q... ${self::TABLE}" />
+            <element signature="e#2949#4482#0#PHP" expanded="false" />
+            <element signature="e#4647#5289#0#PHP" expanded="false" />
+            <element signature="e#5342#5815#0#PHP" expanded="false" />
+            <marker date="1491762780876" expanded="true" signature="4738:4763" ph="SELECT * FRO... ${self::TABLE}" />
+            <marker date="1491762780876" expanded="true" signature="5515:5538" ph="SELECT id, q... ${self::TABLE}" />
+            <marker date="1491762780876" expanded="true" signature="5515:5567" ph="SELECT id, a... ${self::TABLE}" />
+            <marker date="1491762780876" expanded="true" signature="5515:5568" ph="SELECT id, q... ${self::TABLE}" />
+            <marker date="1491762780876" expanded="true" signature="5515:5572" ph="SELECT id, q... ${self::TABLE}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="76" lean-forward="false" selection-start-line="12" selection-start-column="76" selection-end-line="12" selection-end-column="76" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/default.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="true" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="56" column="51" lean-forward="false" selection-start-line="56" selection-start-column="51" selection-end-line="56" selection-end-column="51" />
-          <folding />
+        <state relative-caret-position="346">
+          <caret line="57" column="41" lean-forward="true" selection-start-line="57" selection-start-column="41" selection-end-line="57" selection-end-column="41" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <marker date="1491760959746" expanded="true" signature="875:1361" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="939:1153" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="991:1024" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="991:1126" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1203:1334" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1614:2038" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1660:1770" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1829:2015" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1880:1909" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1880:1992" ph="..." />
+            <marker date="1491760959746" expanded="true" signature="1909:1928" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

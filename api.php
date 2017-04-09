@@ -3,7 +3,7 @@
 
 include 'autoload.php';
 header('Access-Control-Allow-Origin: *');
-//header("Content-Type: application/json; charset=utf-8");
+header("Content-Type: application/json; charset=utf-8");
 header('access-control-allow-methods: GET, POST');
 
 $questionsAnswers = new chatrobot\controller\QuestionAnswerDAO();
@@ -12,3 +12,5 @@ if(isset($_GET['action']))
 {
     echo $questionsAnswers->question(urlencode(strtolower($_GET['action'])) );
 }
+else
+    echo json_encode(array('status'=> 400, 'message'=> 'This action is not available'));
