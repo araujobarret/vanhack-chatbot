@@ -40,8 +40,8 @@ The API returns JSON with 2 properties, status(200, 400 and 404) and the respect
 
 	**Content:** `{ status : 200, message: <message from the server> }`
 
-	* **Error Response:**
+* **Error Response:**
 
 	**Content:** `{ status : 400, message: <message from the server> }`
-								{ status : 404, message: <message from the server> }`
+							 `{ status : 404, message: <message from the server> }`
 
